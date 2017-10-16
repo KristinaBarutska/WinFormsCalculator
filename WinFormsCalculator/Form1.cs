@@ -67,6 +67,35 @@ namespace WinFormsCalculator
             buttonBack.Enabled = true;
         }
 
+        float num, ans;
+        int count;
+
+        public void compute()
+        {
+            switch (count)
+            {
+                case 1:
+                    ans = num + float.Parse(resaultTextBox.Text);
+                    resaultTextBox.Text = ans.ToString();
+                    break;
+
+                case 2:
+                    ans = num - float.Parse(resaultTextBox.Text);
+                    resaultTextBox.Text = ans.ToString();
+                    break;
+                case 3:
+                    ans = num * float.Parse(resaultTextBox.Text);
+                    resaultTextBox.Text = ans.ToString();
+                    break;
+                case 4:
+                    ans = num / float.Parse(resaultTextBox.Text);
+                    resaultTextBox.Text = ans.ToString();
+                    break;
+                default:
+                    break;
+            }
+        }
+
         private void buttonOFF_Click(object sender, EventArgs e)
         {
             disable();
@@ -77,9 +106,68 @@ namespace WinFormsCalculator
             enable();
         }
 
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(resaultTextBox.Text);
+            resaultTextBox.Clear();
+            resaultTextBox.Focus();
+            count = 1;
+            resaultLabel.Text = num.ToString() + "+";
+
+        }
+
+        private void buttonSubs_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(resaultTextBox.Text);
+            resaultTextBox.Clear();
+            resaultTextBox.Focus();
+            count = 2;
+            resaultLabel.Text = num.ToString() + "-";
+        }
+
+        private void buttonMul_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(resaultTextBox.Text);
+            resaultTextBox.Clear();
+            resaultTextBox.Focus();
+            count = 3;
+            resaultLabel.Text = num.ToString() + "*";
+        }
+
+        private void buttonDiv_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(resaultTextBox.Text);
+            resaultTextBox.Clear();
+            resaultTextBox.Focus();
+            count = 4;
+            resaultLabel.Text = num.ToString() + "/";
+        }
+
+        private void buttonEqual_Click(object sender, EventArgs e)
+        {
+            compute();
+            resaultLabel.Text = "";
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            int length = resaultTextBox.TextLength - 1;
+            string text = resaultTextBox.Text;
+            resaultTextBox.Clear();
+            for(int i=0; i < length; i++)
+            {
+                resaultTextBox.Text = resaultTextBox.Text + text[i];
+            }
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            resaultTextBox.Text = "";
+        }
+
         private void buttonDot_Click(object sender, EventArgs e)
         {
-            resaultTextBox.Text = resaultTextBox.Text + ".";
+            resaultTextBox.Text = resaultTextBox.Text + ",";
             resaultTextBox.ForeColor = Color.Red;
         }
 
@@ -136,6 +224,7 @@ namespace WinFormsCalculator
             resaultTextBox.Text = resaultTextBox.Text + 8;
             resaultTextBox.ForeColor = Color.Red;
         }
+      
 
         private void button9_Click(object sender, EventArgs e)
         {

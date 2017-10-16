@@ -49,6 +49,7 @@
             this.button0 = new System.Windows.Forms.Button();
             this.buttonDot = new System.Windows.Forms.Button();
             this.buttonEqual = new System.Windows.Forms.Button();
+            this.resaultLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resaultTextBox
@@ -88,6 +89,7 @@
             this.buttonBack.TabIndex = 4;
             this.buttonBack.Text = "<---";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonClear
             // 
@@ -97,6 +99,7 @@
             this.buttonClear.TabIndex = 5;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonAdd
             // 
@@ -106,6 +109,7 @@
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "+";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // button7
             // 
@@ -145,6 +149,7 @@
             this.buttonSubs.TabIndex = 10;
             this.buttonSubs.Text = "-";
             this.buttonSubs.UseVisualStyleBackColor = true;
+            this.buttonSubs.Click += new System.EventHandler(this.buttonSubs_Click);
             // 
             // button4
             // 
@@ -184,6 +189,7 @@
             this.buttonMul.TabIndex = 14;
             this.buttonMul.Text = "*";
             this.buttonMul.UseVisualStyleBackColor = true;
+            this.buttonMul.Click += new System.EventHandler(this.buttonMul_Click);
             // 
             // button1
             // 
@@ -223,6 +229,7 @@
             this.buttonDiv.TabIndex = 18;
             this.buttonDiv.Text = "/";
             this.buttonDiv.UseVisualStyleBackColor = true;
+            this.buttonDiv.Click += new System.EventHandler(this.buttonDiv_Click);
             // 
             // button0
             // 
@@ -252,12 +259,22 @@
             this.buttonEqual.TabIndex = 21;
             this.buttonEqual.Text = "=";
             this.buttonEqual.UseVisualStyleBackColor = true;
+            this.buttonEqual.Click += new System.EventHandler(this.buttonEqual_Click);
+            // 
+            // resaultLabel
+            // 
+            this.resaultLabel.AutoSize = true;
+            this.resaultLabel.Location = new System.Drawing.Point(12, 15);
+            this.resaultLabel.Name = "resaultLabel";
+            this.resaultLabel.Size = new System.Drawing.Size(0, 13);
+            this.resaultLabel.TabIndex = 22;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(192, 239);
+            this.Controls.Add(this.resaultLabel);
             this.Controls.Add(this.buttonEqual);
             this.Controls.Add(this.buttonDot);
             this.Controls.Add(this.button0);
@@ -310,6 +327,7 @@
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button buttonDot;
         private System.Windows.Forms.Button buttonEqual;
+        private System.Windows.Forms.Label resaultLabel;
     }
 }
 
