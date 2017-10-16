@@ -48,9 +48,9 @@
             this.buttonDiv = new System.Windows.Forms.Button();
             this.button0 = new System.Windows.Forms.Button();
             this.buttonDot = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.buttonEqual = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            //         
+            // 
             // resaultTextBox
             // 
             this.resaultTextBox.Location = new System.Drawing.Point(8, 12);
@@ -244,21 +244,21 @@
             this.buttonDot.UseVisualStyleBackColor = true;
             this.buttonDot.Click += new System.EventHandler(this.buttonDot_Click);
             // 
-            // button20
+            // buttonEqual
             // 
-            this.button20.Location = new System.Drawing.Point(96, 193);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(78, 28);
-            this.button20.TabIndex = 21;
-            this.button20.Text = "=";
-            this.button20.UseVisualStyleBackColor = true;
+            this.buttonEqual.Location = new System.Drawing.Point(96, 193);
+            this.buttonEqual.Name = "buttonEqual";
+            this.buttonEqual.Size = new System.Drawing.Size(78, 28);
+            this.buttonEqual.TabIndex = 21;
+            this.buttonEqual.Text = "=";
+            this.buttonEqual.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(192, 239);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.buttonEqual);
             this.Controls.Add(this.buttonDot);
             this.Controls.Add(this.button0);
             this.Controls.Add(this.buttonDiv);
@@ -309,7 +309,7 @@
         private System.Windows.Forms.Button buttonDiv;
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button buttonDot;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button buttonEqual;
     }
 }
 

@@ -17,15 +17,64 @@ namespace WinFormsCalculator
             InitializeComponent();
         }
     
+        public void disable()
+        {
+            resaultTextBox.Enabled = false;
+            buttonON.Show();
+            buttonOFF.Hide();
+            button0.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button8.Enabled = false;
+            button9.Enabled = false;
+            buttonDot.Enabled = false;
+            buttonAdd.Enabled = false;
+            buttonSubs.Enabled = false;
+            buttonMul.Enabled = false;
+            buttonDiv.Enabled = false;
+            buttonClear.Enabled = false;
+            buttonEqual.Enabled = false;
+            buttonBack.Enabled = false;
+        }
+
+        public void enable()
+        {
+            resaultTextBox.Enabled = true;
+            buttonON.Hide();
+            buttonOFF.Show();
+            button0.Enabled = true;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+            buttonDot.Enabled = true;
+            buttonAdd.Enabled = true;
+            buttonSubs.Enabled = true;
+            buttonMul.Enabled = true;
+            buttonDiv.Enabled = true;
+            buttonClear.Enabled = true;
+            buttonEqual.Enabled = true;
+            buttonBack.Enabled = true;
+        }
 
         private void buttonOFF_Click(object sender, EventArgs e)
         {
-
+            disable();
         }
 
         private void buttonON_Click(object sender, EventArgs e)
         {
-            
+            enable();
         }
 
         private void buttonDot_Click(object sender, EventArgs e)
