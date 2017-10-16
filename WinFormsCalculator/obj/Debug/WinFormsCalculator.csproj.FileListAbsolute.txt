@@ -1,0 +1,9 @@
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\bin\Debug\WinFormsCalculator.exe.config
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\bin\Debug\WinFormsCalculator.exe
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\bin\Debug\WinFormsCalculator.pdb
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.csprojResolveAssemblyReference.cache
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.Form1.resources
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.Properties.Resources.resources
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.csproj.GenerateResource.Cache
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.exe
+C:\Users\k.barutska\documents\visual studio 2017\Projects\WinFormsCalculator\WinFormsCalculator\obj\Debug\WinFormsCalculator.pdb
