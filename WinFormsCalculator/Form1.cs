@@ -167,8 +167,11 @@ namespace WinFormsCalculator
 
         private void buttonDot_Click(object sender, EventArgs e)
         {
-            resaultTextBox.Text = resaultTextBox.Text + ",";
-            resaultTextBox.ForeColor = Color.Red;
+            if (!resaultTextBox.Text.Contains(","))
+            {
+                resaultTextBox.Text = resaultTextBox.Text + ",";
+                resaultTextBox.ForeColor = Color.Red;
+            }
         }
 
         private void button0_Click(object sender, EventArgs e)
